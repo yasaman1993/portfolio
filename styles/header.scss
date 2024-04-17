@@ -1,0 +1,54 @@
+.logo {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 150px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.logo__text {
+  margin-top: 50px;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+  color: #c5283d;
+  text-shadow: 5px 0px 0px #eeeeee;
+}
+
+.link-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  width: 150px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.link {
+  position: relative;
+  top: 100px;
+  margin-top: 50px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px #eeeeee;
+}
+a {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 50px;
+  font-size: 20px;
+}
+

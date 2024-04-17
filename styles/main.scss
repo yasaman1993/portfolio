@@ -1,58 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-.logo {
-  position: absolute;
-  top: 0;
-  text-align: center;
-  width: 150px;
-  height: 200px;
-  border: 2px solid black;
-}
 
-.logo__text {
-  margin-top: 50px;
-  font-size: 80px;
-  font-weight: 700;
-  font-family: "Dancing Script", cursive;
-  color: #c5283d;
-  text-shadow: 5px 0px 0px #eeeeee;
-}
-
-.link-box {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 200px;
-  text-align: center;
-  width: 150px;
-  height: 500px;
-  border: 2px solid black;
-}
-
-.link {
-  position: relative;
-  top: 100px;
-  margin-top: 50px;
-}
-
-.link:hover {
-  text-decoration: underline;
-  text-shadow: 2px 2px 2px #eeeeee;
-}
-
-a {
-  padding: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-}
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: 50px;
-  font-size: 20px;
-}
+@import "header.scss";
 
 * {
   padding: 0;
@@ -65,6 +13,8 @@ a {
   secondary-color: #eeeeee;
   border-color: #d6ffb7;
   text-color: #c5283d;
+  
+
 }
 
 body {
@@ -102,7 +52,6 @@ body {
   margin: 50px 60px;
   font-family: "Source Code Pro", monospace;
 }
-
 .span-code3, .span-code4 {
   position: relative;
   display: block;
@@ -117,6 +66,8 @@ h1 {
 }
 
 .yas {
+  // font-size: 50px;
+  // font-family: "Dancing Script", cursive;
   color: #c5283d;
   text-shadow: 5px 0px 0px #eeeeee;
 }
@@ -126,10 +77,6 @@ h1 {
   top: 0;
 }
 
-.text {
-  margin-left: 250px;
-  font-size: 20px;
-  width: 70%;
-}
-
-/*# sourceMappingURL=style.css.map */
+.text {margin-left: 250px;
+font-size: 20px;
+width:70%;}
