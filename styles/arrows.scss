@@ -1,0 +1,59 @@
+p svg {
+  margin-left: 1rem;
+  animation-name: forward;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+svg {
+  fill: black;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.about-link,
+.projects-link,
+.skills-link,
+.contact-link {
+  display: block;
+  margin-left: 100px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: max-content;
+  .project-link-text {
+    font-size: 16px;
+  }
+}
+
+.about-link:hover {
+  color: var(--secondary-color);
+  transform: translate(10px, -10px);
+}
+.projects-link:hover {
+  color: var(--secondary-color);
+  transform: translate(10px, -10px);
+}
+
+.skills-link:hover {
+  color: var(--secondary-color);
+  transform: translate(10px, -10px);
+}
+.contact-link:hover {
+  color: var(--secondary-color);
+  transform: translate(10px, -10px);
+}
+
+.projects-link {
+  margin-top: 40px;
+  border-top: 2px solid var(--secondary-color);
+}
+
+@keyframes forward {
+  0% {
+    margin-left: 1rem;
+  }
+  100% {
+    margin-left: 2rem;
+  }
+}

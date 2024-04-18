@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "header.scss";
+@import "container.scss";
+@import "arrows.scss";
+@import "about.scss";
+@import "projects.scss";
+@import "skills.scss";
 
 * {
   padding: 0;
@@ -9,18 +14,36 @@
 }
 
 :root {
-  primary-color: #364652;
-  secondary-color: #eeeeee;
-  border-color: #d6ffb7;
-  text-color: #c5283d;
-  
-
+  --primary-color: #3c493f;
+  --secondary-color: #861657;
+  --border-color: #f0f7f4;
+  --gray-color: #b3bfb8;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  width: 95vw;
+  height: 100%;
   padding: 20px;
-  background-image: linear-gradient(120deg, #364652, #d6ffb7);
+  background: linear-gradient(
+      315deg,
+      rgba(7, 7, 7, 0) 0%,
+      rgba(3, 3, 3, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 49%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    linear-gradient(
+      220deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
   background-repeat: no-repeat;
 }
 
@@ -44,39 +67,34 @@ body {
   width: 173vh;
   height: 100%;
   border: 2px solid black;
+
+  p {
+    margin-left: 250px;
+    font-size: 20px;
+    width: 70%;
+  }
 }
 
-.span-code2 {
-  position: relative;
-  display: block;
-  margin: 50px 60px;
-  font-family: "Source Code Pro", monospace;
-}
-.span-code3, .span-code4 {
-  position: relative;
-  display: block;
-  margin: 60px 150px;
-  font-family: "Source Code Pro", monospace;
-}
-
-h1 {
-  margin-left: 250px;
+h2 {
   font-size: 35px;
   width: 450px;
+  padding-left:20px ;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  text-shadow: 3px 0 02px var(--gray-color);
+  animation: title 5s linear;
+  
 }
 
-.yas {
-  // font-size: 50px;
-  // font-family: "Dancing Script", cursive;
-  color: #c5283d;
-  text-shadow: 5px 0px 0px #eeeeee;
+@keyframes title {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
 }
-
-.text-box {
-  position: relative;
-  top: 0;
-}
-
-.text {margin-left: 250px;
-font-size: 20px;
-width:70%;}

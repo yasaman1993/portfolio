@@ -1,0 +1,17 @@
+.text-box {
+    position: relative;
+    top: 0;
+
+    .code {
+        font-family: "Source Code Pro", monospace;
+        position: relative;
+        display: block;
+      }
+      .span-code2 {
+        margin: 50px 60px;
+      }
+      .span-code3,
+      .span-code4 {
+        margin: 60px 150px;
+      }
+  }

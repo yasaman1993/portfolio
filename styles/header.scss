@@ -5,15 +5,27 @@
   width: 150px;
   height: 200px;
   border: 2px solid black;
+
+  .logo__text {
+    margin-top: 50px;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+    color: var(--secondary-color);
+    text-shadow: 5px 0px 0px #eeeeee;
+  }
 }
 
-.logo__text {
-  margin-top: 50px;
-  font-size: 80px;
-  font-weight: 700;
-  font-family: "Dancing Script", cursive;
-  color: #c5283d;
-  text-shadow: 5px 0px 0px #eeeeee;
+.yas {
+  color: var(--secondary-color);
+  text-shadow: 5px 0px 0px var(--gray-color);
+}
+
+h1 {
+  margin-left: 250px;
+  font-size: 35px;
+  width: 450px;
+  animation: header 1s linear infinite;
 }
 
 .link-box {
@@ -25,23 +37,26 @@
   width: 150px;
   height: 500px;
   border: 2px solid black;
+
+  a {
+    position: relative;
+    top: 100px;
+    margin-top: 50px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px #eeeeee;
+  }
 }
 
-.link {
-  position: relative;
-  top: 100px;
-  margin-top: 50px;
-}
 
-.link:hover {
-  text-decoration: underline;
-  text-shadow: 2px 2px 2px #eeeeee;
-}
 a {
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
+  cursor: pointer;
 }
 
 .icons {
@@ -52,3 +67,38 @@ a {
   font-size: 20px;
 }
 
+@keyframes header {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
