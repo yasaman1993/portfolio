@@ -1,9 +1,6 @@
 p svg {
   margin-left: 1rem;
-  animation-name: forward;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation: forward 0.5s alternate infinite;
 }
 
 svg {
@@ -21,32 +18,37 @@ svg {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   width: max-content;
+  
   .project-link-text {
     font-size: 16px;
   }
 }
 
-.about-link:hover {
-  color: var(--secondary-color);
-  transform: translate(10px, -10px);
+.contact-link,
+.skills-link {
+  border-top: 2px solid var(--secondary-color);
+  border-left: 2px solid var(--secondary-color);
+  
 }
-.projects-link:hover {
-  color: var(--secondary-color);
-  transform: translate(10px, -10px);
-}
-
-.skills-link:hover {
-  color: var(--secondary-color);
-  transform: translate(10px, -10px);
-}
-.contact-link:hover {
-  color: var(--secondary-color);
-  transform: translate(10px, -10px);
-}
-
 .projects-link {
   margin-top: 40px;
   border-top: 2px solid var(--secondary-color);
+}
+
+.skills-link {
+  margin-top: 200px;
+}
+
+.contact-link {
+  margin-top: 100px;
+}
+
+.about-link:hover,
+.projects-link:hover,
+.skills-link:hover,
+.contact-link:hover {
+  color: var(--secondary-color);
+  transform: translate(10px, -10px);
 }
 
 @keyframes forward {
