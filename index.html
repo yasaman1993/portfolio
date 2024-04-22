@@ -11,38 +11,40 @@
   </head>
   <body>
     <main class="main">
-      <section class="head">
-        <div class="logo">
-          <div class="logo__text">Yas</div>
-        </div>
+      <section class="welcome-section section-padding">
+        <header class="welcome-section__left">
+          <div class="logo">
+            <div class="logo__text">Yas</div>
+          </div>
 
-        <nav class="link-box">
-          <a href="#about-id">about me</a>
+          <nav class="link-box">
+            <a href="#about-section">about me</a>
 
-          <a href="#projects-id">projects</a>
-          <a href="#skills-id">professional skills</a>
+            <a href="#projects-section">projects</a>
+            <a href="#skills-section">professional skills</a>
 
-          <a href="#contact-id">contact</a>
-        </nav>
+            <a href="#contact-section">contact</a>
+          </nav>
 
-        <nav class="icons">
-          <a
-            href="https://github.com/yasaman1993"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i class="fa-brands fa-github"></i>
-          </a>
+          <nav class="icons">
+            <a
+              href="https://github.com/yasaman1993"
+              target="_blank"
+              rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i>
+            </a>
 
-          <a href="mailto:yasaman.nikpay@gmail.com">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
+            <a href="mailto:yasaman.nikpay@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
 
-          <a href="#">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </nav>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </nav>
+        </header>
 
-        <section class="container">
+        <section class="welcome-section__right">
           <div class="text-box">
             <span class="span-code1"> <./head> </span>
             <br />
@@ -66,7 +68,7 @@
             <span class="code span-code6"> <.p> </span>
 
             <span class="code span-code7"> <.button> </span>
-            <a class="about-link" href="#about-id">
+            <a class="about-link" href="#about-section">
               <p>
                 see more about me
                 <svg
@@ -85,54 +87,106 @@
           </div>
         </section>
       </section>
-    </main>
 
-    <section id="about-id">
-      <h2>about me</h2>
-      <div>
-        <img
-          class="img-about"
-          src="https://cdni.iconscout.com/illustration/premium/thumb/web-development-4500419-3784011.png?f=webp"
-          alt="web-developer" />
-      </div>
-      <div class="about-text">
-        <p>
-          Welcome! I'm a <span>junior web developer</span> on a journey that's
-          been as diverse as it's been enriching. With a master's degree in
-          economics and two years of experience in accounting, I found myself at
-          a crossroads. While numbers held their allure, my heart was elsewhere
-          — in the boundless world of web development.
-        </p>
-        <br />
+      <section id="about-section" class="section-padding">
+        <h2>about me</h2>
+        <div>
+          <img
+            class="img-about"
+            src="https://cdni.iconscout.com/illustration/premium/thumb/web-development-4500419-3784011.png?f=webp"
+            alt="web-developer" />
+        </div>
+        <div class="about-text">
+          <p>
+            Welcome! I'm a <span>junior web developer</span> on a journey that's
+            been as diverse as it's been enriching. With a master's degree in
+            economics and two years of experience in accounting, I found myself
+            at a crossroads. While numbers held their allure, my heart was
+            elsewhere — in the boundless world of web development.
+          </p>
+          <br />
 
-        <p>
-          My transition wasn't just about changing careers; it was about
-          embracing my true calling. Fueled by a passion for creativity and
-          innovation, I dove headfirst into coding, eager to explore the endless
-          possibilities it offered. My background in economics instilled in me a
-          meticulous attention to detail, while my accounting experience taught
-          me the value of precision and accuracy — traits that serve me well in
-          the world of web development.
-        </p>
-        <br />
-        <p>
-          What excites me most about this field is its constant evolution. Every
-          project is a chance to learn something new, to push boundaries, and to
-          challenge myself to become a better developer. From crafting intuitive
-          user interfaces to optimizing backend processes, I thrive on the
-          thrill of problem-solving and the satisfaction of seeing my ideas come
-          to life in the digital realm.
-        </p>
-        <br />
-        <p>
-          So, let's connect, let's collaborate, and let's create something
-          extraordinary together. The journey ahead is bound to be exciting, and
-          I can't wait to see where it takes us."
-        </p>
+          <p>
+            My transition wasn't just about changing careers; it was about
+            embracing my true calling. Fueled by a passion for creativity and
+            innovation, I dove headfirst into coding, eager to explore the
+            endless possibilities it offered. My background in economics
+            instilled in me a meticulous attention to detail, while my
+            accounting experience taught me the value of precision and accuracy
+            — traits that serve me well in the world of web development.
+          </p>
+          <br />
+          <p>
+            What excites me most about this field is its constant evolution.
+            Every project is a chance to learn something new, to push
+            boundaries, and to challenge myself to become a better developer.
+            From crafting intuitive user interfaces to optimizing backend
+            processes, I thrive on the thrill of problem-solving and the
+            satisfaction of seeing my ideas come to life in the digital realm.
+          </p>
+          <br />
+          <p>
+            So, let's connect, let's collaborate, and let's create something
+            extraordinary together. The journey ahead is bound to be exciting,
+            and I can't wait to see where it takes us."
+          </p>
 
-        <a class="projects-link" href="#projects-id">
-          <p class="project-link-text">
-            let's see my projects
+          <a class="projects-link" href="#projects-section">
+            <p class="project-link-text">
+              let's see my projects
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd">
+                <path
+                  d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
+              </svg>
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section id="projects-section" class="section-padding">
+        <h2>projects</h2>
+
+        <div class="projects-container">
+          <div class="project-box">
+            <img
+              src="images/dog-1772759_1280.jpg"
+              alt="project1"
+              class="project-img" />
+            <h3 class="project-title">Project 1</h3>
+          </div>
+
+          <div class="project-box">
+            <img
+              src="images/dog-3277416_1280.jpg"
+              alt="project2"
+              class="project-img" />
+            <h3 class="project-title">Project 2</h3>
+          </div>
+          <div class="project-box">
+            <img
+              src="images/dog-7956828_1280.jpg"
+              alt="project3"
+              class="project-img" />
+            <h3 class="project-title">Project 3</h3>
+          </div>
+
+          <div class="project-box">
+            <img
+              src="images/monochrome-image-8598798_1280.jpg"
+              alt="project4"
+              class="project-img" />
+            <h3 class="project-title">Project 4</h3>
+          </div>
+        </div>
+
+        <a class="skills-link" href="#skills-section">
+          <p class="skills-link-text">
+            let's see my skills
             <svg
               width="24"
               height="24"
@@ -144,185 +198,141 @@
             </svg>
           </p>
         </a>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects-id">
-      <h2>projects</h2>
+      <section id="skills-section" class="section-padding">
+        <h2>professional skills</h2>
 
-      <div class="projects-container">
-        <div class="project-box">
-          <img
-            src="images/dog-1772759_1280.jpg"
-            alt="project1"
-            class="project-img" />
-          <h3 class="project-title">Project 1</h3>
-        </div>
+        <div class="skills-container">
+          <div class="skill-box">
+            <img
+              src="images/logo-2582747_1280.png"
+              alt="css"
+              class="skill-img" />
+            <div class="skill">
+              <span class="level1">beginner</span>
+              <span class="level2">intermediate</span>
+              <span class="level3">advance</span>
+            </div>
+          </div>
 
-        <div class="project-box">
-          <img
-            src="images/dog-3277416_1280.jpg"
-            alt="project2"
-            class="project-img" />
-          <h3 class="project-title">Project 2</h3>
-        </div>
-        <div class="project-box">
-          <img
-            src="images/dog-7956828_1280.jpg"
-            alt="project3"
-            class="project-img" />
-          <h3 class="project-title">Project 3</h3>
-        </div>
-
-        <div class="project-box">
-          <img
-            src="images/monochrome-image-8598798_1280.jpg"
-            alt="project4"
-            class="project-img" />
-          <h3 class="project-title">Project 4</h3>
-        </div>
-      </div>
-
-      <a class="skills-link" href="#skills-id">
-        <p class="skills-link-text">
-          let's see my skills
-          <svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fill-rule="evenodd"
-            clip-rule="evenodd">
-            <path
-              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
-          </svg>
-        </p>
-      </a>
-    </section>
-
-    <section id="skills-id">
-      <h2>professional skills</h2>
-
-      <div class="skills-container">
-        <div class="skill-box">
-          <img src="images/logo-2582747_1280.png" alt="css" class="skill-img" />
-          <div class="skill">
-            <span class="level1">beginner</span>
-            <span class="level2">intermediate</span>
-            <span class="level3">advance</span>
+          <div class="skill-box">
+            <img
+              src="images/logo-2582748_1280.png"
+              alt="html"
+              class="skill-img" />
+            <div class="skill">
+              <span class="level1">beginner</span>
+              <span class="level2">intermediate</span>
+              <span class="level3">advance</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img
+              src="images/2560px-Sass_Logo_Color.svg.png"
+              alt="sass"
+              class="skill-img" />
+            <div class="skill">
+              <span class="level1">beginner</span>
+              <span class="level2">intermediate</span>
+              <span class="level3">advance</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="images/images.jpeg" alt="bootsrap" class="skill-img" />
+            <div class="skill">
+              <span class="level1">beginner</span>
+              <span class="level2">intermediate</span>
+              <span class="level3">advance</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img
+              src="images/GitHub-Mark-ea2971cee799.png"
+              alt="github"
+              class="skill-img" />
+            <div class="skill">
+              <span class="level1">beginner</span>
+              <span class="level2">intermediate</span>
+              <span class="level3">advance</span>
+            </div>
           </div>
         </div>
-
-        <div class="skill-box">
-          <img
-            src="images/logo-2582748_1280.png"
-            alt="html"
-            class="skill-img" />
-          <div class="skill">
-            <span class="level1">beginner</span>
-            <span class="level2">intermediate</span>
-            <span class="level3">advance</span>
-          </div>
-        </div>
-        <div class="skill-box">
-          <img
-            src="images/2560px-Sass_Logo_Color.svg.png"
-            alt="sass"
-            class="skill-img" />
-          <div class="skill">
-            <span class="level1">beginner</span>
-            <span class="level2">intermediate</span>
-            <span class="level3">advance</span>
-          </div>
-        </div>
-        <div class="skill-box">
-          <img src="images/images.jpeg" alt="bootsrap" class="skill-img" />
-          <div class="skill">
-            <span class="level1">beginner</span>
-            <span class="level2">intermediate</span>
-            <span class="level3">advance</span>
-          </div>
-        </div>
-        <div class="skill-box">
-          <img
-            src="images/GitHub-Mark-ea2971cee799.png"
-            alt="github"
-            class="skill-img" />
-          <div class="skill">
-            <span class="level1">beginner</span>
-            <span class="level2">intermediate</span>
-            <span class="level3">advance</span>
-          </div>
-        </div>
-      </div>
-      <a class="contact-link" href="#contact-id">
-        <p class="contact-link-text">
-          get in touch!
-          <svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fill-rule="evenodd"
-            clip-rule="evenodd">
-            <path
-              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
-          </svg>
-        </p>
-      </a>
-    </section>
-    <section id="contact-id">
-      <h2>get in touch today!</h2>
-
-      <form class="form" action="">
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          minlength="4"
-          required
-          placeholder="your name here !" />
-
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="your email here !" />
-
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" placeholder="your number !" />
-
-        <label for="message">Your Message</label>
-        <textarea
-          name="message"
-          id="message"
-          required
-          minlength="7"
-          placeholder="your message here !"></textarea>
-
-        <button>sumbit !</button>
-      </form>
-
-      <div class="icons2">
-        <a
-          href="https://github.com/yasaman1993"
-          target="_blank"
-          rel="noopener noreferrer">
-          <i class="fa-brands fa-github giit"></i>
+        <a class="contact-link" href="#contact-section">
+          <p class="contact-link-text">
+            get in touch!
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd">
+              <path
+                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
+            </svg>
+          </p>
         </a>
+      </section>
 
-        <a href="mailto:yasaman.nikpay@gmail.com">
-          <i class="fa-regular fa-envelope email"></i>
-        </a>
+      <section id="contact-section" class="section-padding">
+        <h2>get in touch today!</h2>
 
-        <a href="#">
-          <i class="fa-brands fa-linkedin liinkedin"></i>
-        </a>
-        <!-- <a href="#" >
-           <i class="fa-brands fa-whatsapp whatsapp"></i>
-        </a> -->
-      </div>
-    </section>
+        <form class="form" action="">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            minlength="4"
+            required
+            placeholder="your name here !" />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="your email here !" />
+
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="your number !" />
+
+          <label for="message">Your Message</label>
+          <textarea
+            name="message"
+            id="message"
+            required
+            minlength="7"
+            placeholder="your message here !"></textarea>
+
+          <button>sumbit !</button>
+        </form>
+
+        <div class="icons2">
+          <a
+            href="https://github.com/yasaman1993"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-brands fa-github giit"></i>
+          </a>
+
+          <a href="mailto:yasaman.nikpay@gmail.com">
+            <i class="fa-regular fa-envelope email"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-linkedin liinkedin"></i>
+          </a>
+          <!-- <a href="#" >
+             <i class="fa-brands fa-whatsapp whatsapp"></i>
+          </a> -->
+        </div>
+      </section>
+    </main>
   </body>
 </html>
