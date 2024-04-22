@@ -1,11 +1,12 @@
-.logo {
-  position: absolute;
-  top: 0;
-  text-align: center;
-  width: 150px;
-  height: 200px;
-  border: 1px solid var(--secondary-color);
-  
+header {
+  border: 3px solid var(--secondary-color);
+  border-right: none;
+
+  .logo {
+    text-align: center;
+    height: 25%;
+    border-bottom: 3px solid var(--secondary-color);
+  }
 
   .logo__text {
     margin-top: 50px;
@@ -14,54 +15,39 @@
     color: var(--secondary-color);
     text-shadow: 5px 0px 0px var(--text-color);
     animation: rotate-in-vertical 4.5s linear 0s infinite alternate forwards;
-    
   }
-}
-
-.yas {
-  color: var(--secondary-color);
-  text-shadow: 3px 0px 2px var(--text-color);
-}
-
-h1 {
-  margin-left: 250px;
-  font-size: 35px;
-  width: 450px;
-  animation: vibration 1s linear infinite forwards;
-}
-
-.link-box {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 200px;
-  text-align: center;
-  width: 150px;
-  height: 500px;
-  border: 4px solid var(--secondary-color);
   
-
-  a {
-    position: relative;
-    top: 100px;
-    margin-top: 30px;
+  .yas {
+    color: var(--secondary-color);
+    text-shadow: 3px 0px 2px var(--text-color);
+  }
+  
+  .link-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    border-bottom: 3px solid var(--secondary-color);
+  
+    a {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+      color:var(--secondary-color);
+      text-shadow: 2px 2px 10px var(--text-color);
+    }
   }
 
-  a:hover {
-    text-decoration: underline;
-    color:var(--secondary-color);
-    text-shadow: 2px 2px 10px var(--text-color);
+  .icons {
+    display: flex;
+    flex-direction: row;
+    bottom: 50px;
+    font-size: 20px;
   }
-}
-
-
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: 50px;
-  font-size: 20px;
 }
 
 .fa-github:hover,

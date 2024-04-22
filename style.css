@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-.logo {
-  position: absolute;
-  top: 0;
-  text-align: center;
-  width: 150px;
-  height: 200px;
-  border: 1px solid var(--secondary-color);
+header {
+  border: 3px solid var(--secondary-color);
+  border-right: none;
 }
-.logo .logo__text {
+header .logo {
+  text-align: center;
+  height: 25%;
+  border-bottom: 3px solid var(--secondary-color);
+}
+header .logo__text {
   margin-top: 50px;
   font-size: 70px;
   font-weight: 700;
@@ -15,44 +16,30 @@
   text-shadow: 5px 0px 0px var(--text-color);
   animation: rotate-in-vertical 4.5s linear 0s infinite alternate forwards;
 }
-
-.yas {
+header .yas {
   color: var(--secondary-color);
   text-shadow: 3px 0px 2px var(--text-color);
 }
-
-h1 {
-  margin-left: 250px;
-  font-size: 35px;
-  width: 450px;
-  animation: vibration 1s linear infinite forwards;
-}
-
-.link-box {
+header .link-box {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 200px;
+  justify-content: center;
   text-align: center;
-  width: 150px;
-  height: 500px;
-  border: 4px solid var(--secondary-color);
+  height: 50%;
+  border-bottom: 3px solid var(--secondary-color);
 }
-.link-box a {
-  position: relative;
-  top: 100px;
-  margin-top: 30px;
+header .link-box a {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.link-box a:hover {
+header .link-box a:hover {
   text-decoration: underline;
   color: var(--secondary-color);
   text-shadow: 2px 2px 10px var(--text-color);
 }
-
-.icons {
+header .icons {
   display: flex;
   flex-direction: row;
-  position: absolute;
   bottom: 50px;
   font-size: 20px;
 }
@@ -230,7 +217,7 @@ svg {
     margin-left: 2rem;
   }
 }
-#about-id {
+#about-section {
   padding-top: 30px;
   margin-top: 10px;
   height: 100vh;
@@ -252,7 +239,7 @@ svg {
   margin-bottom: 100px;
 }
 
-#projects-id {
+#projects-section {
   padding-top: 30px;
   margin-top: 10px;
   height: 100vh;
@@ -306,8 +293,9 @@ svg {
     box-shadow: 0 0px 10px var(--text-color);
   }
 }
-#skills-id {
-  padding: 40px 0;
+#skills-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin: 30px 0;
   height: 100vh;
   width: 100%;
@@ -368,7 +356,7 @@ svg {
     opacity: 1;
   }
 }
-#contact-id {
+#contact-section {
   padding-top: 70px;
   margin-top: 10px;
   height: 100vh;
@@ -482,45 +470,51 @@ body {
   font-family: "Josefin Sans", sans-serif;
   width: 100%;
   height: 100%;
-  padding: 20px;
   background: linear-gradient(334deg, #770058, #7525e2, #ff5ca8);
   background-size: 180% 180%;
   animation: gradient-animation 4s ease infinite;
   color: var(--text-color);
   font-weight: 600;
+  overflow-x: hidden;
 }
 
-.head {
-  position: relative;
-  top: 0;
+.section-padding {
+  padding: 20px;
+}
+
+.welcome-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 4px solid var(--secondary-color);
+  flex-direction: row;
   border-radius: 5px;
-  width: 150px;
-  height: 95vh;
+  width: 100%;
+  height: 100vh;
 }
 
-.container {
-  position: absolute;
-  left: 100%;
+.welcome-section__left {
+  width: 15%;
+  height: 100%;
+}
+
+.welcome-section__right {
+  width: 85%;
+  height: 100%;
   padding: 10px;
-  width: 90vw;
-  height: 95vh;
   border: 4px solid var(--secondary-color);
 }
-.container h1 {
+.welcome-section__right h1 {
   margin-top: 200px;
+  margin-left: 250px;
+  font-size: 35px;
+  width: 450px;
+  animation: vibration 1s linear infinite forwards;
 }
-.container p {
+.welcome-section__right p {
   margin-left: 250px;
   margin-top: 100px;
   font-size: 20px;
   width: 70%;
 }
-.container a {
+.welcome-section__right a {
   margin-top: 30px;
 }
 
