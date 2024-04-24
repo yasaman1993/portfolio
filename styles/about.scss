@@ -2,7 +2,7 @@
   padding-top: 30px;
   margin-top: 10px;
   height: 100vh;
-  width: 50%;
+  width: 100%;
 }
 
 .about-text {
@@ -15,9 +15,19 @@
 }
 
 .img-about {
-  display: inline-block;
-  width: 600px;
-  position: absolute;
-  left: 60%;
-  margin-bottom: 100px;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #about-section {
+    width: 50%;
+  }
+  
+  .img-about {
+    display: inline-block;
+    width: 600px;
+    position: absolute;
+    left: 60%;
+    margin-bottom: 100px;
+  }
 }

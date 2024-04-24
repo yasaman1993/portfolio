@@ -7,8 +7,9 @@
 
 .projects-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
 }
 .project-box {
@@ -19,12 +20,10 @@
   border: 5px solid var(--secondary-color);
   box-shadow: 0 0 50px 0 var(--text-color);
   border-radius: 5px;
-  transition: all 1s ease-in-out;
-  animation: box-shadow-multicolor 3s ease infinite;
 
   img {
-    width: 300px;
-    height: 350px;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
     box-shadow: 0 0 20px 0 var(--text-color);
   }
@@ -51,5 +50,21 @@
   }
   100% {
     box-shadow: 0 0px 10px var(--text-color);
+  }
+}
+
+@media (min-width: 992px) {
+  .projects-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .project-box {
+    transition: all 1s ease-in-out;
+    animation: box-shadow-multicolor 3s ease infinite;
+    img {
+      width: 300px;
+      height: 350px;
+    }
   }
 }
