@@ -6,7 +6,7 @@ header {
     margin-right: auto;
 
     h3 {
-      width: fit-content;
+      text-align: center;
       margin-top: 20px;
       visibility: visible;
       animation: vibration 1s linear infinite forwards;
@@ -162,6 +162,7 @@ header {
     .logo {
       border-bottom: 3px solid var(--secondary-color);
       height: 15%;
+      width: 100%;
       h3 {
         display: none;
       }

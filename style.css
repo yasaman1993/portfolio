@@ -6,7 +6,7 @@ header .logo {
   margin-right: auto;
 }
 header .logo h3 {
-  width: fit-content;
+  text-align: center;
   margin-top: 20px;
   visibility: visible;
   animation: vibration 1s linear infinite forwards;
@@ -142,6 +142,7 @@ header .icons {
   header .logo {
     border-bottom: 3px solid var(--secondary-color);
     height: 15%;
+    width: 100%;
   }
   header .logo h3 {
     display: none;
@@ -224,22 +225,25 @@ a {
 @media (min-width: 992px) {
   .welcome-section__right {
     width: 85%;
+    height: 100%;
     padding: 10px;
     border: 4px solid var(--secondary-color);
     display: block;
   }
   .welcome-section__right h1 {
-    margin-top: 200px;
+    margin-top: 30px;
     margin-left: 250px;
     font-size: 35px;
     width: 450px;
     animation: vibration 1s linear infinite forwards;
+    font-family: "Josefin Sans", sans-serif;
   }
   .welcome-section__right p {
     margin-left: 250px;
-    margin-top: 100px;
-    font-size: 20px;
+    margin-top: 30px;
+    font-size: 24px;
     width: 70%;
+    font-family: "Josefin Sans", sans-serif;
   }
   .welcome-section__right a {
     margin-top: 30px;
@@ -249,56 +253,21 @@ a {
   }
 }
 .text-box {
-  position: absolute;
-  top: 20px;
+  font-family: "Source Code Pro", monospace;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 .text-box .code {
-  font-family: "Source Code Pro", monospace;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 150px;
 }
 .text-box .span-code1 {
-  position: absolute;
-  top: 50px;
-  left: 70px;
-}
-.text-box .span-code2 {
-  position: absolute;
-  top: 100px;
-  left: 120px;
+  margin-left: 100px;
 }
 .text-box .span-code3 {
-  position: absolute;
-  top: 150px;
-  left: 200px;
-}
-.text-box .span-code4 {
-  position: absolute;
-  top: 350px;
-  left: 200px;
-}
-.text-box .span-code5 {
-  position: absolute;
-  top: 400px;
-  left: 200px;
-}
-.text-box .span-code6 {
-  position: absolute;
-  top: 500px;
-  left: 200px;
-}
-.text-box .span-code7 {
-  position: absolute;
-  top: 570px;
-  left: 150px;
-}
-.text-box .span-code8 {
-  position: absolute;
-  top: 650px;
-  left: 150px;
-}
-.text-box .span-code9 {
-  position: absolute;
-  top: 750px;
-  left: 120px;
+  margin-left: 200px;
 }
 
 p svg {
@@ -380,9 +349,18 @@ svg {
 
 .about-text p {
   margin-left: 20px;
+  margin-right: 20px;
   font-size: 22px;
   padding: 20px;
   border-left: 3px solid var(--secondary-color);
+}
+
+.about-text-paragraph {
+  display: none;
+}
+
+.about-text-link {
+  display: block;
 }
 
 .img-about {
@@ -391,15 +369,24 @@ svg {
 
 @media (min-width: 992px) {
   #about-section {
+    width: 100%;
+    height: 100%;
+  }
+  .about-text {
     width: 50%;
-    height: 100vh;
   }
   .img-about {
     display: inline-block;
-    width: 600px;
+    width: 40%;
     position: absolute;
-    left: 60%;
+    left: 55%;
     margin-bottom: 100px;
+  }
+  .about-text-paragraph {
+    display: block;
+  }
+  .about-text-link {
+    display: none;
   }
 }
 #projects-section {
@@ -456,7 +443,7 @@ svg {
 }
 @media (min-width: 992px) {
   #projects-section {
-    height: 100vh;
+    height: 100%;
   }
   .projects-container {
     flex-direction: row;
@@ -535,7 +522,7 @@ svg {
 }
 @media (min-width: 992px) {
   #skills-section {
-    height: 100vh;
+    height: 100%;
   }
   .skills-container {
     animation: roll-in-left 1.3s linear;
@@ -544,7 +531,6 @@ svg {
 #contact-section {
   padding-top: 70px;
   margin-top: 10px;
-  height: 100vh;
   width: 100%;
 }
 
@@ -603,6 +589,7 @@ textarea:invalid {
   border-radius: 20px;
   border: 3px solid var(--secondary-color);
   background-color: var(--secondary-color);
+  color: var(--text-color);
   animation: none;
 }
 
@@ -639,6 +626,9 @@ textarea:invalid {
   }
 }
 @media (min-width: 992px) {
+  #contact-section {
+    height: 100%;
+  }
   .form input {
     width: 30%;
   }
@@ -677,8 +667,6 @@ textarea:invalid {
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(334deg, #770058, #7525e2, #ff5ca8);
   background-size: 180% 180%;
   color: var(--text-color);
