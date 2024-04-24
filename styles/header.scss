@@ -2,6 +2,8 @@ header {
   .logo {
     text-align: center;
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 
     h3 {
       width: fit-content;
@@ -109,9 +111,6 @@ header {
 .welcome-section__left {
   width: 100%;
   height: 100%;
-  margin-left:50%;
-  
-  
 }
 
 @keyframes rotate-in-vertical {

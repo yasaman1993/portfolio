@@ -1,7 +1,6 @@
 #projects-section {
   padding-top: 30px;
   margin-top: 10px;
-  height: 100vh;
   width: 100%;
 }
 
@@ -54,6 +53,10 @@
 }
 
 @media (min-width: 992px) {
+  #projects-section {
+    height: 100vh;
+  }
+
   .projects-container {
     flex-direction: row;
     justify-content: space-around;
