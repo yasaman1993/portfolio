@@ -653,6 +653,12 @@ textarea:invalid {
     height: 100px;
     animation: wobble-hor-top 4.2s linear 0s infinite alternate-reverse none;
   }
+  .giit:hover,
+  .email:hover,
+  .liinkedin:hover,
+  .whatsapp:hover {
+    animation: none;
+  }
 }
 * {
   padding: 0;
