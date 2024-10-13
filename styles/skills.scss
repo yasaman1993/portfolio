@@ -42,16 +42,16 @@
   padding: 5px;
   text-transform: capitalize;
 
-  .level1 {
+  
+
+  .level2 {
     border-right: 3px solid var(--secondary-color);
     border-radius: 50px;
     background-color: var(--secondary-color);
     box-shadow: 0 0 50px 0 var(--text-color);
-  }
 
-  .level2 {
-    border-right: 3px solid var(--secondary-color);
   }
+  
 }
 
 @keyframes roll-in-left {
@@ -72,5 +72,6 @@
 
   .skills-container {
     animation: roll-in-left 1.3s linear;
+    
   }
 }

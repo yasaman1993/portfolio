@@ -309,7 +309,7 @@ svg {
 }
 
 .skills-link {
-  margin-top: 200px;
+  margin-bottom: auto;
 }
 
 .contact-link {
@@ -399,9 +399,16 @@ svg {
 .projects-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+}
+.project-item p {
+  margin-left: 20px;
 }
 
 .project-box {
@@ -412,16 +419,17 @@ svg {
   border: 5px solid var(--secondary-color);
   box-shadow: 0 0 50px 0 var(--text-color);
   border-radius: 5px;
-}
-.project-box img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-  box-shadow: 0 0 20px 0 var(--text-color);
+  margin-right: 20px;
+  transition: all 0.3s ease;
+  width: 100%;
+  border-radius: 50px;
 }
 .project-box h3 {
   margin-top: 20px;
   text-align: center;
+}
+.project-box p {
+  width: 100%;
 }
 
 .project-box:hover {
@@ -448,15 +456,10 @@ svg {
   }
   .projects-container {
     flex-direction: row;
-    justify-content: space-around;
   }
   .project-box {
     transition: all 1s ease-in-out;
     animation: box-shadow-multicolor 3s ease infinite;
-  }
-  .project-box img {
-    width: 300px;
-    height: 350px;
   }
 }
 #skills-section {
@@ -501,14 +504,11 @@ svg {
   padding: 5px;
   text-transform: capitalize;
 }
-.skill .level1 {
+.skill .level2 {
   border-right: 3px solid var(--secondary-color);
   border-radius: 50px;
   background-color: var(--secondary-color);
   box-shadow: 0 0 50px 0 var(--text-color);
-}
-.skill .level2 {
-  border-right: 3px solid var(--secondary-color);
 }
 
 @keyframes roll-in-left {
